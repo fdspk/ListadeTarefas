@@ -1,0 +1,84 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+header{
+    text-align: center;
+    margin-top:30px;
+}
+section{
+    background-color: rgba(132, 218, 255, 0.56);
+    min-height:100vh;
+    margin:30px;
+    padding:30px;
+    
+}
+.flex{
+    display: flex;
+    flex-wrap: wrap;
+    gap:20px;
+}
+#txt{
+    width:100%; 
+    padding: 1em 1em;
+    font-size: 20px;
+}
+#button{
+    width:40%;
+    font-size:14px;
+    padding: .5em;
+ }
+
+.card{
+    display:block;
+    margin:10px;
+    background-color:white;
+    border-radius: 15px;
+    padding:10px;
+}
+
+.editar, .deletar{
+    margin-top:20px;
+    margin-left:10px;
+    padding: .5em 1em;
+}
+.editar{
+    background-color:#3EFE52;
+    border:1px solid rgb(110, 110, 110);
+}
+.deletar{
+    background-color:#EC0404;
+    border:1px solid rgb(110, 110, 110);
+}
+
+
+@media screen and (min-width: 992px) {
+    #txt { 
+        width:80%; 
+        padding: .5em 1em;
+     }
+     #button{
+        width:15%;
+        font-size:20px;
+        padding: .5em 1em;
+     }
+     .flex{
+        justify-content: space-around;
+        gap:0;
+        flex-wrap: nowrap;
+        margin-bottom:20px;
+     }
+     .card{
+        display: inline-block;
+        min-width:90%; 
+     }
+     .editar, .deletar{
+        margin:0;
+        margin-left:10px;
+        display:inline;
+     }
+}
